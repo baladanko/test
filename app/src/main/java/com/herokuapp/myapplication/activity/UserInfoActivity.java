@@ -1,4 +1,4 @@
-package com.herokuapp.myapplication.dialoginfo;
+package com.herokuapp.myapplication.activity;
 
 
 import android.app.Activity;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import com.herokuapp.myapplication.R;
 import com.herokuapp.myapplication.entity.User;
-import com.herokuapp.myapplication.main.MainActivity;
 
+/* Окно с дополнительной информацией о пользователе */
 public class UserInfoActivity extends Activity implements OnClickListener {
 
     User user;
@@ -42,13 +42,11 @@ public class UserInfoActivity extends Activity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-
         switch (v.getId()){
             case R.id.btnClose:
                 this.finish();
                 break;
         }
-
     }
 
 

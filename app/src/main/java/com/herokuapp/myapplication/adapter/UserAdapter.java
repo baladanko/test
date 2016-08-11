@@ -1,4 +1,4 @@
-package com.herokuapp.myapplication.main;
+package com.herokuapp.myapplication.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,9 +12,6 @@ import com.herokuapp.myapplication.entity.User;
 
 import java.util.ArrayList;
 
-/**
- * Created by nesstar on 15.08.2015.
- */
 public class UserAdapter extends BaseAdapter {
     LayoutInflater mLayoutInflater;
 
@@ -26,10 +23,8 @@ public class UserAdapter extends BaseAdapter {
     Context mContext;
 
     public UserAdapter(Context context, ArrayList<User> mListUserItems) {
-        // Log.d("TEST1");
         this.mContext = context;
         this.mListUserItems = mListUserItems;
-
         mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -70,6 +65,5 @@ public class UserAdapter extends BaseAdapter {
 
     public static class ViewHolder {
         public TextView tvName, tvSurname;
-
     }
 }
